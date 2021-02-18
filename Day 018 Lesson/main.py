@@ -2,6 +2,7 @@
 # import module as mos - this will create an alias you can use
 from turtle import Turtle, Screen, colormode
 from random import choice, randint
+import colorgram
 
 #######################################################################################################################
 # timmy = Turtle()
@@ -70,13 +71,34 @@ from random import choice, randint
 # for step in range(200):
 #     random_walk()
 
+# Making a spirograph
+# timmy = Turtle()
+#
+# direction = [0, 90, 180, 270]
+# # timmy.pensize(10)
+# timmy.speed("fastest")
+# colormode(255)
+#
+#
+# def random_color():
+#     r = randint(0, 255)
+#     g = randint(0, 255)
+#     b = randint(0, 255)
+#     return (r, g, b)
+#
+#
+# def draw_spirograph(gap_size):
+#     for _ in range(int(360 / gap_size)):
+#         timmy.pencolor(random_color())
+#         timmy.circle(100)
+#         timmy.setheading(timmy.heading() + gap_size)
+#
+#
+# draw_spirograph(3)
+
 timmy = Turtle()
-colors = ["aquamarine", "bisque", "blue", "BlueViolet", "CadetBlue", "chartreuse", "chocolate", "coral",
-          "CornflowerBlue", "cyan", "DarkGoldenrod1", "DarkGreen", "DarkOrchid", "DarkSeaGreen", "DarkSlateGray",
-          "DeepSkyBlue", "DodgerBlue", "firebrick", "gold", "indianred", "lawngreen", "lavender", "LightSlateBlue",
-          "LimeGreen", "OliveDrab", "purple", "RoyalBlue", "violet"]
+
 direction = [0, 90, 180, 270]
-timmy.pensize(10)
 timmy.speed("fastest")
 colormode(255)
 
@@ -85,14 +107,9 @@ def random_color():
     r = randint(0, 255)
     g = randint(0, 255)
     b = randint(0, 255)
-    return r, g, b
+    return (r, g, b)
 
-
-
-
-
-
-
+timmy.dot(20)
 
 
 
