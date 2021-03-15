@@ -8,7 +8,6 @@ screen.addshape(image)
 turtle.shape(image)
 
 
-
 # This will print out the coordinates on the screen
 # def get_coor(x, y):
 #     print(x, y)
@@ -36,5 +35,4 @@ while len(states_guessed) < 50:
         t.goto(x=xcoor, y=ycoor)
         t.write(answer_state)
 
-
-# screen.exitonclick()
+screen.exitonclick()
